@@ -9,16 +9,14 @@ body {
     background-image: url("https://github.com/NinjaSotos/HarmonyEssence.github.io/blob/main/images/background.png?raw=true");
 }
 header {
-    color: #fff;
     text-align: center;
-    border-bottom: solid, black;
 }
 
 nav {
     padding: 1em;
     position:relative;
     overflow: hidden;
-    border-bottom: solid, black;
+    border-bottom: 1px solid black;
 }
 
 section {
@@ -29,7 +27,12 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1em;
+    bottom: 0;
+    left:0;
+    right:0;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
 .candles-grid {
@@ -80,7 +83,8 @@ h3 {
     color: #534f4f;
 }
 .aboutus {
-    width: 700px;
+    max-width: 700px;
+    width: 90%;
     margin: 0 auto;
     padding: 1em;
     position: relative;
@@ -88,10 +92,15 @@ h3 {
 }
 @media only screen and (max-width: 300px) {
     .aboutus {
-        width: 200px; /* Adjust this value as needed */
+       
         font-size: 1.5rem; /* Use rem units for font size */
     }
 }
 .price {
     font-weight: bold;
+}
+.container {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding to create space around the content */
 }
