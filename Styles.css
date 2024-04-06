@@ -1,0 +1,49 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #eee;
+    padding: 1em;
+}
+
+section {
+    padding: 2em;
+    background-color: #fbebd9;}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.candles-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-template-columns: minmax(2rem, 1fr);
+    gap: 20px;
+}
+
+.candle-item {
+    width: 40%; /* Each candle takes up half of the container */
+    box-sizing: border-box; /* Includes padding and border in the total width */
+    padding: 1em; /* Add padding to provide space around each candle */
+    margin-bottom: 2em;
+}
+.candle-item img {
+    width: 100%;
+    height: auto;
+}
