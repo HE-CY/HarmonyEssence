@@ -36,20 +36,22 @@ footer {
 }
 
 .candles-grid {
-    display: grid;
-    grid-template-rows: repeat(auto-fit, 0.3fr);
-    grid-template-columns: repeat(auto-fit, minmax(100px,0.3fr));
-    justify-items: space-evenly;
-    align-items: space-evenly;
+    display: flex;
+    justify-items: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .candle-item {
-    padding: 1rem;
+    padding: 0.5rem;
+    
    
 }
 .candle-item img {
-    width: 100%;
-    height: auto;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
 }
 .topnav a {
     float: left;
@@ -103,4 +105,56 @@ h3 {
     max-width: 1200px; /* Adjust as needed */
     margin: 0 auto; /* Center the container horizontally */
     padding: 20px; /* Add padding to create space around the content */
+}
+.description {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    color: #333; /* Adjust color as needed */
+  }
+  .description p {
+    margin-bottom: 5px; /* Adjust spacing between paragraphs */
+  }
+  
+  .description .fragrance {
+    text-decoration: underline;
+  }
+  .Shaped {
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    display: flex; /* Prevents them from breaking onto new lines */
+  }
+  .geo-size{
+    display: inline-block;
+    margin: 30px;
+  }
+  .about{
+    width:100%;
+    text-align: center;
+  }
+  .about img{
+    display: inline-block;
+    width: 70%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .contact{
+    width:100%;
+    text-align: center;
+  }
+  .contact img{
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    width:100%;
+    text-align: center;
+  }
+
+.social-links a {
+    display: inline-block; /* Ensure proper alignment */
+    margin: 0 10px; /* Adjust spacing between icons */
+}
+.social-links img {
+    width: 40px; /* Set the width of the image to 20 pixels */
+    height: auto; /* Maintain aspect ratio */
 }
