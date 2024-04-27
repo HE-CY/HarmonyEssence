@@ -1,7 +1,8 @@
 /* styles.css */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Quattrocento sans', sans-serif;
+    font-size: 14px;
     margin: 0;
     padding: 0;
     background-repeat: no-repeat;
@@ -18,7 +19,18 @@ nav {
     overflow: hidden;
     border-bottom: 1px solid black;
 }
-
+.topnav a {
+    float: left;
+    color:black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+.topnav a:hover {
+    background-color: #d6c9ba;
+    color: white;
+}
 section {
     padding: 2em;
 }
@@ -35,36 +47,16 @@ footer {
     padding: 10px;
 }
 
-.candles-grid {
-    display: flex;
-    justify-items: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
 .candle-item {
-    padding: 0.5rem;
-    
-   
+   display:block;
+   padding: 1rem;
+   margin: 20px;
 }
 .candle-item img {
     width: 100%;
-    display: block;
     margin: 0 auto;
 }
-.topnav a {
-    float: left;
-    color:black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-.topnav a:hover {
-    background-color: #d6c9ba;
-    color: white;
-}
+
 .heading {
     
     background-color: #B9A996;
@@ -75,7 +67,7 @@ footer {
 h1 {
     font-size: 2em;
     color: #534f4f;
-    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ,Arial; 
+    font-family:  Georgia, Times, 'Times New Roman', serif ,Arial; 
 }
 h2 {
     font-size: 1.2em;
@@ -157,4 +149,10 @@ h3 {
 .social-links img {
     width: 40px; /* Set the width of the image to 20 pixels */
     height: auto; /* Maintain aspect ratio */
+}
+.spacer{
+    background-color: #B9A996;
+    color: #695f5f;
+    text-align: center;
+    padding: 2px;
 }
