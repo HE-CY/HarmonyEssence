@@ -84,12 +84,7 @@ h3 {
     position: relative;
     text-align: left;
 }
-@media only screen and (max-width: 300px) {
-    .aboutus {
-       
-        font-size: 1.5rem; /* Use rem units for font size */
-    }
-}
+
 .price {
     font-weight: bold;
 }
@@ -99,6 +94,7 @@ h3 {
     padding: 20px; /* Add padding to create space around the content */
 }
 .description {
+    
     line-height: 1;
     color: #333; /* Adjust color as needed */
   }
