@@ -9,6 +9,11 @@ body {
     background-size: cover;
     background-image: url("https://github.com/NinjaSotos/HarmonyEssence.github.io/blob/main/images/background.png?raw=true");
 }
+.main-body {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding to create space around the content */
+}
 header {
     text-align: center;
 }
@@ -46,17 +51,36 @@ footer {
     margin-bottom: 10px;
     padding: 10px;
 }
+.container{
+    display: flex;
+    align-items: flex-start;
 
-.candle-item {
-   display:block;
-   padding: 1rem;
-   margin: 20px;
 }
-.candle-item img {
-    width: 100%;
-    margin: 0 auto;
+.image {
+    margin-right: 20px;
+    width:350px;
+    height:auto;
+    padding: 20px;
 }
-
+.text-container{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 700px) {
+    .container {
+      font-size: 1.1em; /* Increase font size for larger screens */
+    }
+  }
+  @media screen and (max-width: 699px) {
+    .container {
+      flex-direction: column; /* Stack items vertically on mobile */
+    }
+    .image {
+      width: 100%; /* Make image full width on mobile */
+      margin-right: 0; /* Remove right margin on mobile */
+      padding: 0;
+    }
+  }
 .heading {
     
     background-color: #B9A996;
@@ -88,32 +112,36 @@ h3 {
 .price {
     font-weight: bold;
 }
-.container {
-    max-width: 1200px; /* Adjust as needed */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 20px; /* Add padding to create space around the content */
-}
-.description {
-    
-    line-height: 1;
-    color: #333; /* Adjust color as needed */
-  }
   .description p {
     margin-bottom: 5px; /* Adjust spacing between paragraphs */
   }
   
-  .description .fragrance {
+  .underline {
     text-decoration: underline;
+  }
+  
+  .sizes{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 0px;
+    
   }
   .Shaped {
     margin: 0; /* Remove any default margin */
     padding: 0; /* Remove any default padding */
     display: flex; /* Prevents them from breaking onto new lines */
   }
-  .geo-size{
-    display: inline-block;
-    margin: 5px;
-  }
+  .size-medium .shaped{
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    margin: 0px;
+    padding: 0px;
+}
+.border{
+    border-left:solid;
+    border-width: 1px;
+}
   .about{
     width:100%;
     text-align: center;
@@ -128,14 +156,6 @@ h3 {
     width:100%;
     text-align: center;
   }
-  .contact img{
-    display: inline-block;
-    width: 100%;
-    height: 300px;
-    width:100%;
-    text-align: center;
-  }
-
 .social-links a {
     display: inline-block; /* Ensure proper alignment */
     margin: 0 10px; /* Adjust spacing between icons */
@@ -149,4 +169,5 @@ h3 {
     color: #695f5f;
     text-align: center;
     padding: 2px;
+    margin: 20px 0px 20px 0px;
 }
